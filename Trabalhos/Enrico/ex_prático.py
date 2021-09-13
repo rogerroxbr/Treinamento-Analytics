@@ -9,7 +9,7 @@ imc = peso / altura ** 2
 if imc <= 18.5:
     status = "Peso baixo"
 
-if imc > 18.5 and (imc <= 24,9):
+if imc > 18.5 and imc <= 24,9:
     status = "Peso normal"
 
 if imc > 24.9:
