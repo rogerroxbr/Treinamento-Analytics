@@ -1,5 +1,1 @@
-#Treinamento Analytics: 
-
-'''
-Welliton Workspace
-'''
+#Treinamento Analytics: Workspace Welliton 
