@@ -9,4 +9,3 @@ print(f'Ano de Nascimento: {nasc}')
 
 imc = peso / altura **2
 print(f'IMC: {imc:.2f}')
-
