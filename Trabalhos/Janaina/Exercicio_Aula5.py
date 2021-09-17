@@ -118,6 +118,7 @@ while x < len(L):
      print(L[x])
      x += 1
 '''
+'''
 primeira = []
 segunda = []
 while True:
@@ -147,6 +148,23 @@ x = 0
 while x < len(terceira):
     print(f"{x}: {terceira[x]}")
     x = x + 1
+'''
+'''
+lista1 = []
+lista2 = []
+
+while True:
+    i = int(input("Digite o numero ou 0 para sair"))
+    if i == 0
+        break
+    lista1.append(i)
+while True:
+    i = int(input("Digite o numero ou 0 para sair"))
+    if i == 0
+        break
+    lista2.append(i)
+'''
+
 
 
 
