@@ -169,14 +169,11 @@ while True:
         print(f"A palavra secreta era: {palavra}")
         break
 '''
+lista = [1,2,3]
 
-from turtle import Turtle
-t = turtle.Turtle()
-t.speed(1)
-t.forward(100)
-t.right(200)
-#t.left(90)
-#t.back(200)
+for x, e in enumerate(lista)
+
+print(x, e)
 
 
 
