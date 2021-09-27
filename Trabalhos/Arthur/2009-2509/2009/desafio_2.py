@@ -1,6 +1,5 @@
 import turtle
 
-print("\n")
 print("Direção | Código")
 print(" /\     | 1")
 print(" \/     | 2") 
@@ -9,51 +8,51 @@ print(" <-     | 4")
 print(" Salvar | 5")
 print(" Sair   | 0")
 
-t = turtle.Turtle()
-t.speed(1)
+defined_turtle = turtle.Turtle()
+defined_turtle.speed(1)
 graus = 0
+
+def move_forward():
+    pixels = int(input("Informe a quantidade de pixels a serem percorridos: "))
+    defined_turtle.forward(pixels)
+
+
+def move_backward():
+    pixels = int(input("Informe a quantidade de pixels a serem percorridos: "))
+    defined_turtle.backward(pixels)
+
+
+def move_right():
+    graus = int(input("Informe a quantidade de graus a serem rotacionados: "))
+    defined_turtle.right(graus)
+
+
+def move_left():
+    graus = int(input("Informe a quantidade de graus a serem rotacionados: "))
+    defined_turtle.left(graus)
+
 
 while True:
 
-    # t.forward(100) // Anda 100 pixels para frente!
-    # t.left(90) // Ajusta o Ângulo 90 graus p/ esquerda!
-    # t.right(90) // Ajusta o Ângulo 90 graus p/ direita!
-    # t.backward(100)  // Anda 100 pixels para trás!
+    decision = int(input("Informe a direção da tartaruga: "))
 
-    print("\n")
-    d = int(input("Informe a direção da tartaruga: "))
-
-    if d == 0:
-        print("\n")
+    if decision == 0:
         print("Obrigado por jogar!")
-        print("\n")
         break
 
-    elif d >= 1 and d <= 4:
-        print("\n")
-        if d == 1:
-            p = int(input("Informe a quantidade de pixels a serem percorridos: "))
-            t.forward(p)
+    elif decision == 1:
+        move_forward()
 
-        elif d == 2:
-            p = int(input("Informe a quantidade de pixels a serem percorridos: "))
-            t.backward(p)
+    elif decision == 2:
+        move_backward()
 
-        elif d == 3:
-            g = int(input("Informe a quantidade de graus a serem rotacionados: "))
-            t.right(g)
+    elif decision == 3:
+        move_right()
 
-        elif d == 4:
-            g = int(input("Informe a quantidade de graus a serem rotacionados: "))
-            t.left(g)
-
-    elif d == 5:
-        ts = turtle.getscreen()
-        ts.getcanvas().postscript(file="duck.eps")
+    elif decision == 4:
+        move_left()
 
     else:
-        print("\n")
         print("Código não encontrado!")
         print("Informe o código novamente!")
-        print("\n")
         continue
