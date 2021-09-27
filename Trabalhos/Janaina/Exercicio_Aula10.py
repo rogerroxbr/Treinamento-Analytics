@@ -35,13 +35,14 @@ Rios = {"Nilo": "Egito"}
 for chave, valor in Rios.items():
     print(f"O rio: ", chave, "Corre pelo", valor)
 '''
-
+'''
 favorit_places = {"joão": "Opera de Arame", "Francine": "Parque Barigui"}
 
 for pessoa, lugar in favorit_places.items():
     print(" ")
     print("O lugar favorito de", pessoa.title(), "é: ", lugar)
     print("* - " * 15)
+'''
 
 
 
