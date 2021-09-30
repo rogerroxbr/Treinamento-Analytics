@@ -13,8 +13,6 @@ for e in compras:
     soma += e[1] * e[2]
 print(f"Total: [soma:7.2f")
 '''
-import turtle
-
 '''
 L = [7, 4, 3, 7, 12, 8]
 fim = 5
